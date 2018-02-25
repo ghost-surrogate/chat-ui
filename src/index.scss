@@ -12,6 +12,26 @@ body {
       font-size: 1.5em;
     }
   }
+
+  .msg-container {
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+
+  .no-padding {
+    padding: 0 !important;
+  }
+
+  .msg-username {
+    width: 100%!important;
+    input {
+      width: 100%!important;
+    }
+  }
+
+  .msg-input input {
+    width: 100%;
+  }
 }
 
 

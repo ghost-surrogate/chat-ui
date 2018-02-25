@@ -1,9 +1,23 @@
 Add your general design and decision comments here:
 
+Mind flow without any order:
+
+Almost each step or decision in the test can be discussed from the different types of view.
+I tried to be in the proposed stack.
+App separation level can be flat as 'actions' and 'reducers' or splitted by modules.
+Socket integration can be done through the middleware or more 'classic' external way.
+Styled-props are not very useful when using semantic-ui and has a conflicts in mixing both for one purpose.
+Semantic-UI has an internal rules like margin/padding, I don't want to fight much agains it using !import just to go through.
+View can be adjusted by the different type of screens even with semantic-ui but it's time.
+
+Styled-Props or CSS(SASS etc.). There is no silver bullet, each way has downsides. I'm up to 'classic' CSS way. 
+No matter which way you choose it's a long path to get a real beauty in the browser.
+
+Do not move all possible events to redux, it's a global state machine not a global storage for everything.
+`redux-thunk` or `redux-saga`, second can be used in more complex solutions.
+ImmutableJS, good way to keep your app immutable and avoid shouldUpdate bugs with deep changes tracking.
+Extract all components like Input, Buttons into your own components even if you use TwitterBootstrap, Semantic UI etc.
+Easy replacement in the future. Big deal.
 
 
-
-
-
-Feedback regarding this exam is always welcomed.
-What did you like? What didn't you like? What was missing?
+No tests so far. Spent 5 hours playing with current solution. It's my free limit.
